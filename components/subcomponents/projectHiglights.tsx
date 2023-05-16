@@ -78,7 +78,7 @@ export default function ProjectHiglights({ highlightWorks }: IProps) {
                   {project.desc}
                 </Text>
               </Link>
-              <Text fontSize='sm' color='brand.600'>
+              <Text fontSize='sm' color={{base:'brand.600', lg:'brand.700'}}>
                 {project.tag.join(' ')}
               </Text>
             </Flex>
