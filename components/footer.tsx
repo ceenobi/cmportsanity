@@ -11,7 +11,12 @@ type link = {
 export default function Footer() {
   return (
     <Flex justify='center' mt='10rem' direction='column' gap={6}>
-      <HStack spacing='20px' alignItems='center' justifyContent='center' hideFrom='md'>
+      <HStack
+        spacing='20px'
+        alignItems='center'
+        justifyContent='center'
+        hideFrom='md'
+      >
         {footerlink.map((link: link) => (
           <a key={link.id} href={link.href}>
             <Box
@@ -27,12 +32,12 @@ export default function Footer() {
       <Text
         as={Link}
         href='https://github.com/bchiang7/v4'
-        _hover={{ color: 'brand.600' }}
+        _hover={{ color: 'brand.600', transition: '0.3s ease-in' }}
         textAlign='center'
         fontSize='12px'
         color='brand.700'
       >
-        Design inpired by Brittany Chiang
+        Design inspired by Brittany Chiang
       </Text>
     </Flex>
   )
