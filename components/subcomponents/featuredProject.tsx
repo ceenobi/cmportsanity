@@ -26,6 +26,7 @@ export default function featuredProject({
     <Flex
       pos='relative'
       justify='space-between'
+      gap={4}
       direction={direction}
       mb={{ base: '4rem', lg: '8rem' }}
     >
@@ -106,9 +107,9 @@ export default function featuredProject({
           color='brand.700'
           textAlign={textAlignDesc}
           p={{ base: 0, lg: 5 }}
-          w={{ base: 'full', lg: '60%', xl: '55%' }}
+          w={{ base: 'full', lg: '60%', xl: '65%' }}
           pos={{ base: 'relative', lg: 'absolute' }}
-          top={{ base: 'null', lg: '35%' }}
+          top={{ base: 'null', lg: '30%' }}
           right={rightDesc}
           left={leftDesc}
           zIndex={{ base: 'null', lg: 4 }}

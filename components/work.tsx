@@ -14,7 +14,8 @@ export default function Work({ workdata }: IProps) {
   const featuredWorks: WorkType[] = workdata.filter(
     (work) => work.featured === true
   )
-  const highlightWorks:WorkType[]= workdata.filter((work) => work.featured === null)
+  const highlightWorks:WorkType[]= workdata.filter((work) => work.featured === false)
+
   return (
     <AnimateBox>
       <SectionLayout id='work' number='03' title='Featured Projects'>

@@ -76,6 +76,9 @@ export default function Navbar() {
             color='brand.600'
             variant='outline'
             borderRadius='0'
+            as={Link}
+            href='https://drive.google.com/file/d/163E1RzNQ3MxmILBXpV1Ij7OXEggbLCpH/view?usp=share_link'
+            isExternal
           >
             Resume
           </Button>

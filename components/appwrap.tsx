@@ -23,14 +23,9 @@ type link = {
 export default function Appwrap({ children }: RootLayoutProps) {
   return (
     <Container maxW='container.2xl' mx='auto' w='100%' py={4}>
-      <Grid templateColumns='repeat(12, 1fr)'>
-        <GridItem
-          colSpan={{ md: 1, xl: 2 }}
-          hideBelow='md'
-          px={4}
-          mx={{ md: 0, xl: 'auto' }}
-        >
-          <VStack spacing='20px' pos='fixed' bottom='0'>
+      <Grid templateColumns='repeat(12, 1fr)' pos='relative' minHeight='100vh'>
+        <GridItem colSpan={{ md: 1, xl: 2 }} hideBelow='md' px={4}>
+          <VStack spacing='20px' pos='fixed' bottom='0' left={5}>
             {footerlink.map((link: link) => (
               <a key={link.id} href={link.href}>
                 <Box
@@ -53,16 +48,12 @@ export default function Appwrap({ children }: RootLayoutProps) {
         >
           {children}
         </GridItem>
-        <GridItem
-          colSpan={{ md: 1, xl: 2 }}
-          hideBelow='md'
-          px={4}
-          mx={{ md: 0, xl: 'auto' }}
-        >
-          <VStack spacing='20px' pos='fixed' bottom='0'>
+        <GridItem colSpan={{ md: 1, xl: 2 }} hideBelow='md' px={4}>
+          <VStack spacing='20px' pos='fixed' bottom='0' right={15}>
             <Link
               href='mailto:cobimbachu@gmail.com'
               alignItems='center'
+              justifyContent='end'
               _hover={{ color: 'brand.600' }}
               color='brand.700'
             >
