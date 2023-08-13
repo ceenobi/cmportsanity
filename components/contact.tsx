@@ -8,11 +8,11 @@ import {
   Text,
 } from '@chakra-ui/react'
 import React from 'react'
-import AnimateBox from './subcomponents/animateBox'
+// import AnimateBox from './subcomponents/animateBox'
 
 export default function Contact() {
   return (
-    <AnimateBox>
+    <>
       <Box
         mt={{ base: '6rem', lg: '12rem' }}
         px={{ base: 'null', md: 12 }}
@@ -53,6 +53,6 @@ export default function Contact() {
           </Button>
         </Flex>
       </Box>
-    </AnimateBox>
+    </>
   )
 }

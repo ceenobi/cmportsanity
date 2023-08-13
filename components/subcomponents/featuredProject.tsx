@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, Icon,  Link, Text } from '@chakra-ui/react'
+import { Box, Flex, HStack, Icon, Link, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 import React from 'react'
 import { AiOutlineLink } from 'react-icons/ai'
@@ -25,7 +25,7 @@ export default function featuredProject({
   return (
     <Flex
       pos='relative'
-      justify='space-between'
+      justifyContent='space-between'
       gap={4}
       direction={direction}
       mb={{ base: '4rem', lg: '8rem' }}
@@ -33,7 +33,7 @@ export default function featuredProject({
       <Box hideBelow='lg'>
         <Link href={imgLink}>
           <Box
-            w={{ lg: '450px', '2xl': '600px' }}
+            w={{ lg: '430px', '2xl': '600px' }}
             h='350px'
             bg='brand.600'
             pos='absolute'
@@ -52,7 +52,7 @@ export default function featuredProject({
           />
 
           <Box
-            w={{ lg: '450px', '2xl': '600px' }}
+            w={{ lg: '430px', '2xl': '600px' }}
             h='350px'
             _hover={{
               opacity: '1',
@@ -67,7 +67,7 @@ export default function featuredProject({
               src={src}
               alt={alt}
               fill
-              style={{ objectFit: 'fill', borderRadius: '7px' }}
+              style={{ borderRadius: '7px' }}
               blurDataURL='URL'
               placeholder='blur'
             />

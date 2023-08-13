@@ -39,11 +39,12 @@ export default function Navbar() {
       bg='brand.900'
     >
       <Flex
-        maxW='container.xl'
+        maxW='container.2xl'
         mx='auto'
         align='center'
         justify='space-between'
-        p={4}
+        py={4}
+        px={3}
       >
         <Flex
           border='3px solid'
