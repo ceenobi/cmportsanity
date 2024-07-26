@@ -33,52 +33,52 @@ export default function Navbar() {
   return (
     <Box
       zIndex={10}
-      sx={showNavbar ? 'none' : navStyle}
-      w='full'
-      boxShadow='lg'
-      bg='brand.900'
+      sx={showNavbar ? "none" : navStyle}
+      w="full"
+      boxShadow="lg"
+      bg="brand.900"
     >
       <Flex
-        maxW='container.2xl'
-        mx='auto'
-        align='center'
-        justify='space-between'
+        maxW="container.2xl"
+        mx="auto"
+        align="center"
+        justify="space-between"
         py={4}
         px={3}
       >
         <Flex
-          border='3px solid'
-          borderRadius='full'
-          borderColor='brand.600'
-          boxSize='50px'
-          justify='center'
-          align='center'
+          border="3px solid"
+          borderRadius="full"
+          borderColor="brand.600"
+          boxSize="50px"
+          justify="center"
+          align="center"
         >
-          <Text textAlign='center' fontSize='larger' as={Link} href='/'>
+          <Text textAlign="center" fontSize="larger" as={Link} href="/">
             CM
           </Text>
         </Flex>
-        <HStack spacing='24px' hideBelow='md'>
+        <HStack spacing="24px" hideBelow="md">
           {navlink.map((link: link) => (
             <Link
               href={`#${link.href}`}
               key={link.id}
-              color='brand.700'
-              _hover={{ color: 'brand.800', transition: '0.3s ease-in' }}
+              color="brand.700"
+              _hover={{ color: "brand.800", transition: "0.3s ease-in" }}
             >
-              <Box as='span' color='brand.600'>
+              <Box as="span" color="brand.600">
                 {link.tag}.
-              </Box>{' '}
+              </Box>{" "}
               {link.name}
             </Link>
           ))}
           <Button
-            borderColor='brand.600'
-            color='brand.600'
-            variant='outline'
-            borderRadius='0'
+            borderColor="brand.600"
+            color="brand.600"
+            variant="outline"
+            borderRadius="0"
             as={Link}
-            href='https://drive.google.com/file/d/163E1RzNQ3MxmILBXpV1Ij7OXEggbLCpH/view?usp=share_link'
+            href="https://drive.google.com/file/d/1rzOcokCp7rvZVe8J7WJhUjHR40nsSMik/view?usp=drive_link"
             isExternal
           >
             Resume
@@ -87,5 +87,5 @@ export default function Navbar() {
         <Sidebar />
       </Flex>
     </Box>
-  )
+  );
 }
