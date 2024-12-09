@@ -45,7 +45,7 @@ export default function ProjectHiglights({ highlightWorks }: IProps) {
       </Text>
       <Grid templateColumns='repeat(12, 1fr)' gap={{ base: 0, lg: 8 }}>
         {highlightWorks.map((project) => (
-          <GridItem colSpan={{ base: 12, lg: 6, xl: 4 }} mb={4} key={project._id}>
+          <GridItem colSpan={{ base: 12, lg: 6 }} mb={4} key={project._id}>
             <Flex direction='column' justify='space-between' sx={boxStyle}>
               <Flex justify='end' align='end' gap={8}>
                 <Link
