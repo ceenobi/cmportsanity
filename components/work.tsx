@@ -82,7 +82,7 @@ export default function Work({ workdata }: IProps) {
               imgLink={item.site}
             />
           ))}
-          {featuredWorks.slice(3).map((item) => (
+          {featuredWorks.slice(0).map((item) => (
             <Worklayout
               direction={"row"}
               textAlign={{ base: "start", lg: "right" }}
