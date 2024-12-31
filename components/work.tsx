@@ -5,6 +5,7 @@ import ProjectHiglights from "./subcomponents/projectHiglights";
 import AnimateBox from "./subcomponents/animateBox";
 import SectionLayout from "./subcomponents/sectionLayout";
 import { WorkType } from "@/types";
+import { log } from "console";
 
 interface IProps {
   workdata: WorkType[];
@@ -17,6 +18,8 @@ export default function Work({ workdata }: IProps) {
   const highlightWorks: WorkType[] = workdata.filter(
     (work) => work.featured === false
   );
+
+  console.log(featuredWorks);
 
   return (
     <AnimateBox>
@@ -79,7 +82,7 @@ export default function Work({ workdata }: IProps) {
               imgLink={item.site}
             />
           ))}
-          {featuredWorks.slice(3, 4).map((item) => (
+          {featuredWorks.slice(3).map((item) => (
             <Worklayout
               direction={"row"}
               textAlign={{ base: "start", lg: "right" }}
