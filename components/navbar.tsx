@@ -78,7 +78,7 @@ export default function Navbar() {
             variant="outline"
             borderRadius="0"
             as={Link}
-            href="https://drive.google.com/file/d/1VxjKOnk-h1A_dyOhnziewIu8i3u9xDXh/view?usp=sharing"
+            href="https://drive.google.com/file/d/1fHkXGm6y4ol_XMGRtYZqkZgWIWP3bKUE/view?usp=drive_link"
             isExternal
           >
             Resume
