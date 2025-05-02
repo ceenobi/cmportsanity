@@ -7,7 +7,6 @@ type link = {
   href: string
   icon?: JSX.Element
 }
-
 export default function Footer() {
   return (
     <Flex justify='center' mt='10rem' direction='column' gap={6}>
