@@ -16,7 +16,7 @@ export default function Navbar() {
   const showNav = () => {
     window.scrollY >= 100 ? setShowNavbar(true) : setShowNavbar(false)
   }
-
+//jgj
   useEffect(() => {
     showNav()
     window.addEventListener('scroll', showNav)
